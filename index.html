@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Gonzalo Yacante" />
+    <meta name="copyright" content="Gonzalo Yacante" />
+    <meta name="description" content="Gonzalo Yacante - Simple Home Page" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <title>Testimonial Page</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="header-logo header-logo-light"
+        src="./assets/alarado-icon-lightmode.svg"
+        alt="Logo icon page" />
+      <img
+        class="header-logo header-logo-dark"
+        src="./assets/alarado-icon-darkmode.svg"
+        alt="Logo icon page" />
+      <nav class="header-nav">
+        <ul class="header-nav_list">
+          <li>About us</li>
+          <li>Product</li>
+          <li>Resource</li>
+          <li>Contact</li>
+        </ul>
+        <div class="buttonTheme-container">
+          <input
+            onchange="toggleTheme()"
+            type="checkbox"
+            id="buttonTheme"
+            class="buttonTheme-input" />
+          <label for="buttonTheme" class="buttonTheme-label">
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </nav>
+      <button onclick="toggleMenu()" class="buttonNavMobile">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main class="container">
+      <img
+        class="container-principal-img"
+        src="./assets/hero-image-simple-homepage.png"
+        alt="Principal image of Home Page" />
+      <section class="info-container">
+        <p class="info-text">😎 SIMPLE WAT TO COMMUNICATE</p>
+        <h1 class="info-title">Actions for Accessibility in Design</h1>
+        <p class="info-subtitle">
+          The fastest way to build and deploy websites with resusable
+          components.
+        </p>
+        <div>
+          <button class="info-button">GET STARTED</button>
+          <a class="info-link" href="/">Get live demo</a>
+        </div>
+        <ul class="info-check-list">
+          <li>
+            <img
+              class="info-check-list_icon"
+              src="./assets/check-icon.svg"
+              alt="Check-icon" />
+            <p class="info-check-list_text">No credit card required</p>
+          </li>
+          <li>
+            <img
+              class="info-check-list_icon"
+              src="./assets/check-icon.svg"
+              alt="Check-icon" />
+            <p class="info-check-list_text">No software to install</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
